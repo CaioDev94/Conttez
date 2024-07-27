@@ -1,0 +1,859 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:rgb(255, 255, 255);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+header{
+    width: 100%;
+    background-color: rgb(24, 24, 24);
+}
+.contato{
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    color: rgb(206, 165, 30);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 18px;
+}
+.contato div{
+    margin-right: 20px;
+    width: 280px;
+}
+.email::before{
+    content:"";
+    width: 25px;
+    height: 25px;
+    background-image: url("Conttez/email.png");
+    background-size: cover;
+    background-position: center;
+}
+.email{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.tel::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url("Conttez/telefone.png");
+    background-size: cover;
+    background-position: center;
+    margin-right: 10px;
+}
+.tel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.secao-topo{
+    max-width: 1024px;
+    height: 120px;
+    margin: 0 auto;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(24, 24, 24);
+    box-sizing: border-box;
+}
+.logo figure{
+    width: 100px;
+    height: 100px;
+}
+.logo figure img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.links a{
+    text-decoration: none;
+    font-size: 22px;
+    padding: 10px ;
+    margin: 20px;
+    color: rgb(206, 165, 30);
+}
+.links a:hover{
+    background-color:rgb(255, 255, 255);
+    border-radius: 20px;
+    color: black;
+}
+.banner{
+    width: 100%;
+    height: 700px;
+    margin: 0 auto;
+    background-image: url("Conttez/Imagem18.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+.secao-limita-largura-dois{
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 5px;
+    text-align: left;
+}
+.titulo-um{
+    width: 400px;
+    text-align: center;
+    font-size: 30px;
+    padding: 60px 0 0 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.titulo-um a{
+    color: rgb(206, 165, 30);
+    text-decoration: none;
+    padding: 10px 10px 10px 30px;
+    border-radius: 10px;
+    width: 250px;
+    position: relative;
+}
+.titulo-um a:hover{
+    background-color: white;
+}
+.titulo-um a::before{
+    content:"";
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-image: url("Conttez/whatsapp-svgrepo-com.png");
+    background-size: cover;
+    background-position: center;
+    background-color: green;
+    display: flex;
+    position: absolute;
+    top: 10px;
+    left: 25px;
+}
+.titulo h1{
+    font-size: 50px;
+    color: rgb(206, 165, 30);
+}
+.secao-conteudo{
+    max-width: 1024px;
+    height: 800px;
+    margin: 0 auto;
+    background-image: url("Conttez/Imagem20.png");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+.texto-um{
+    max-width: 550px;
+    height: 800vh;
+    padding: 10px;
+    text-align: left;
+    font-size: 26px;
+    color: rgb(0, 0, 0);
+    line-height: 70px;
+    background-color: rgb(150, 139, 105);
+    opacity: 85%;
+}
+.vantagens{
+    max-width: 1024px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+  
+}
+.destaque{
+    width: 100%;
+    height: 350px;
+    background-color: rgb(24, 24, 24);
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+}
+.destaque h1{
+    color: rgb(206, 165, 30);
+}
+.vantagens div{
+    width: 180px;
+    height: 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    background-color:rgb(255, 255, 255);
+    box-shadow: 10px 10px 10px 10px rgb(47, 47, 47);
+    font-size: 17px;
+}
+.vantagens p::first-letter{
+    font-size: 30px;
+    color: rgb(206, 165, 30);
+}
+.secao-conteudo strong{
+    color: rgb(255, 255, 255);
+}
+.secao-conteudo p::first-letter{
+    font-size: 90px;
+    color: rgb(255, 255, 255);
+}
+.serviços{
+    max-width: 1024px;
+    margin: 10px auto;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 3px dotted rgb(68, 68, 68);
+}
+.serviços h1{
+    font-size: 50px;
+    color: rgb(206, 165, 30);
+}
+.compromisso{
+    margin: 40px 0 20px 0;
+}
+.secao-ecossistema{
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.consultoria-contabil, .Assessoria-fiscal, .assessoria-trabalhista, .gestao-financeira, .imposto-renda{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+    padding: 30px;
+    background-color: rgb(44, 44, 44);
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px black;
+    opacity: 90%;
+}
+.secao-ecossistema h2{
+    color: rgb(206, 165, 30);
+}
+.secao-ecossistema li{
+    color: white
+}
+.secao-ecossistema figure img{
+    width: 150px;
+    height: 150px;
+    margin-bottom: 30px;
+}
+.secao-ecossistema ul{
+    text-align: left;
+}
+.secao-ecossistema img:hover{
+    opacity: 70%;
+}
+.secao-pilares{
+    max-width: 1024px;
+    height: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.card-um, .card-dois, .card-tres{
+    width: 400px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.secao-cards p{
+    color: black;
+}
+.numero h1{
+    font-size: 100px;
+    color: rgb(206, 165, 30);
+    margin-right: 20px;
+}
+.texto{
+    text-align: left;
+}
+.texto p{
+    font-size: 18px;
+}
+.foto img{
+    width: 550px;
+    height: 450px;
+}
+.serviços img{
+    margin: 30px 0 80px 0;
+    border-radius: 15px;
+    box-shadow: 12px 12px 10px;
+}
+.produtos{
+    max-width: 1024px;
+    margin: 50px auto;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 3px dotted rgb(68, 68, 68);
+}
+.titulo-prod{
+    font-size: 36px;
+    color: rgb(206, 165, 30);
+}
+.diferenciais-um{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+    flex-wrap: wrap;
+    font-size: 24px;
+}
+.diferenciais-um div{
+    width: 260px;
+    height: 80px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color:rgb(68, 68, 68);
+    box-shadow: 15px 15px 15px rgb(88, 88, 88);
+    
+}
+.diferenciais-um div:hover{
+    background-color: white;
+    color: black;
+}
+.diferenciais-dois{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+.diferenciais-dois div{
+    width: 250px;
+    height: 150px;
+    margin: 10px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 0 20px 0 20px;
+    background-color:rgb(68, 68, 68);
+    box-shadow: 15px 15px 15px rgb(68, 68, 68);
+}
+.extra div:hover{
+    border-radius: 100%;
+    
+}
+.diferenciais-dois div h2{
+    color: rgb(206, 165, 30);
+    font-size: 26px;
+}
+.diferenciais-dois div p{
+    color: white;
+    font-size: 18px;
+}
+.contabil{
+    max-width: 1024px;
+    margin: 10px auto;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px dotted rgb(68, 68, 68);
+}
+.titulo-contabil{
+    font-size: 36px;
+    color: rgb(206, 165, 30);
+    margin-bottom: 30px;
+}
+.extra{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.extra div{
+    width: 200px;
+    height: 100px;
+    border: 1px solid black;
+    box-shadow: 15px 15px 15px rgb(68, 68, 68);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin: 5px;
+    background-color: rgb(68, 68, 68);
+}
+.extra div h1{
+    margin-right: 15px;
+    font-size: 50px;
+    color: rgb(206, 165, 30);
+}
+.extra div h2{
+    font-size: 22px;
+    color: white;
+}
+.abrir-cnpj{
+    max-width: 1024px;
+    height: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    
+
+}
+.cnpj-foto{
+    max-width: 1024px;
+    height: 700px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.abrir-cnpj div figure img{
+    width: 400px;
+    height: 450px;
+}
+.link-cnpj a{
+    font-size: 24px;
+    text-decoration: none;
+    background-color:rgb(24, 24, 24);
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+.link-cnpj a:hover{
+    background-color: rgb(206, 165, 30);
+    color: white;
+}
+.cnpj-texto{
+    width: 500px;
+    height: 450px;
+    padding: 0 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 17px;
+}
+.cnpj-texto h1{
+    color: rgb(206, 165, 30);
+}
+.cnpj-texto p:nth-child(3){
+    display: flex;
+    align-items: center;
+}
+.cnpj-texto p:nth-child(3)::before{
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-image: url("Conttez/carteira.png");
+    background-position: center;
+    background-size: cover;
+    margin-right: 10px;
+}.cnpj-texto p:nth-child(4){
+    display: flex;
+    align-items: center;
+}
+.cnpj-texto p:nth-child(4)::before{
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-image: url("Conttez/cartao-de-credito.png");
+    background-position: center;
+    background-size: cover;
+    margin-right: 10px;
+}
+.cnpj-texto p:nth-child(5){
+    display: flex;
+    align-items: center;
+}
+.cnpj-texto p:nth-child(5)::before{
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-image: url("Conttez/medalhas.png");
+    background-position: center;
+    background-size: cover;
+    margin-right: 10px;
+}
+.cnpj-texto p:nth-child(6){
+    display: flex;
+    align-items: center;
+}
+.cnpj-texto p:nth-child(6)::before{
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-image: url("Conttez/desbloquear.png");
+    background-position: center;
+    background-size: cover;
+    margin-right: 10px;
+}
+.associados{
+    width: 100%;
+    height: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(24, 24, 24);
+    border-bottom: 3px dotted rgb(68, 68, 68);
+}
+.titulo-assoc{
+    font-size: 36px;
+    color: rgb(206, 165, 30);
+    margin-bottom: 40px;
+}
+.contatos{
+    max-width: 1024px;
+    margin: 50px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    border-bottom: 3px dotted rgb(68, 68, 68);
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    opacity: 90%;
+}
+.biografia{
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.foto-contador img{
+    width: 400px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 12px 12px 12px gray;
+}
+.texto-biografia{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 20px;
+    text-align: justify;
+}
+.texto-biografia h3{
+    color: white;
+    font-size: 30px;
+}
+.texto-biografia p{
+    color: black;
+}
+.texto-biografia p::first-letter{
+    font-size: 36px;
+    color: rgb(206, 165, 30);
+}
+.texto-biografia h2{
+    color: rgb(206, 165, 30);
+}
+.info a:nth-child(2){
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+
+}.info a:nth-child(2):hover{
+    background-color: rgb(206, 165, 30);
+    border-radius: 10px;
+    padding: 10px;
+}
+.info a:nth-child(2)::before{
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-image: url("Conttez/telefone.png");
+    background-size: cover;
+    background-position: center;
+    margin-right: 10px;
+    
+}
+.info a:nth-child(3){
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+.info a:nth-child(3):hover{
+    background-color: rgb(206, 165, 30);
+    border-radius: 10px;
+    padding: 10px;
+}
+.info a:nth-child(3)::before{
+    content:"";
+    width: 25px;
+    height: 25px;
+    background-image: url("Conttez/instagram-svgrepo-com.png");
+    background-size: cover;
+    background-position: center;
+    margin-right: 10px;
+}
+.info p:nth-child(4){
+    display: flex;
+    align-items: center;
+}
+.info p:nth-child(4)::before{
+    content:"";
+    width: 25px;
+    height: 25px;
+    background-image: url("Conttez/facebook-svgrepo-com.png");
+    background-size: cover;
+    background-position: center;
+    margin-right: 10px;
+}
+.info p:last-child{
+    display: flex;
+    align-items: center;
+}
+.info p:last-child::before{
+    content:"";
+    width: 25px;
+    height: 25px;
+    background-image: url("Conttez/email.png");
+    background-size: cover;
+    background-position: center;
+    margin-right: 10px;
+}
+.info{
+    width: 330px;
+    height: 400px;
+    padding: 10px 20px 10px 50px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    font-size: 16px;
+}
+.info h1{
+    color: rgb(206, 165, 30);
+}
+footer{
+    width: 100%;
+    text-align: center;
+    background-color: rgb(24, 24, 24);
+    font-size: 24px;
+    position: relative;
+}
+footer img{
+    position: absolute;
+    bottom: 20px;
+    right: 50px;
+}
+.secao-limita-largura{
+    max-width: 1024px;
+    height: 450px;
+    margin: 10px auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.titulo-rodape{
+    color: white;
+}
+.titulo-rodape::first-line{
+    color: rgb(206, 165, 30);
+}
+.ultimo-paragrafo{
+    color: rgb(206, 165, 30);
+    font-size: 18px;
+}
+@media (max-width: 1024px){
+    .biografia{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .foto-contador figure img{
+        width: 300px;
+        height: 300px;
+    }
+    .texto-biografia{
+        font-size: 18px;
+    }
+    footer{
+        height: 600px;
+    }
+    footer p{
+        display: none;
+    }
+    .serviços figure img{
+        width: 400px;
+        height: 400px;
+    }
+    .foto figure img{
+        display: none;
+    }
+    .secao-ecossistema div figure img{
+        display: none;
+    }
+    .abrir-cnpj{
+        height: 950px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+@media (max-width:768px){
+    .contato{
+        font-size: 12px;
+    }
+    .secao-topo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;  
+        height: 400px;
+    }
+    .logo{
+        height: 300px;
+    }
+    .logo figure img{
+        width: 100px;
+        height: 100px;
+    }
+    .links nav a{
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        color: rgb(206, 165, 30);
+        background-color: black;
+        border-radius: 15px;
+    }
+    .secao-limita-largura-dois, .secao-conteudo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .texto-um{
+        font-size: 25px;
+    }
+    .serviços h1{
+        font-size: 28px;
+    }
+    .consultoria-contabil, .Assessoria-fiscal, .assessoria-trabalhista, .gestao-financeira, .imposto-renda{
+        font-size: 16px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .secao-ecossistema, .secao-pilares, .secao-cards, .biografia{
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .destaque{
+        height: 900px;
+    }
+    .vantagens{
+      flex-wrap: wrap;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .vantagens div{
+        width: 120px;
+        height: 140px;
+        margin-bottom: 25px;
+    }
+    .vantagens div figure img{
+        width: 50px;
+        height: 50px;
+    }
+    .vantagens div p{
+        font-size: 12px;
+    }
+    .secao-ecossistema div figure img{
+        display: none;
+    }
+    .secao-cards{
+        font-size: 30px;
+    }
+    .foto figure img{
+        display: none;
+    }
+    .serviços figure img{
+        width: 450px;
+        height: 450px;
+    }
+    .associados{
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .parceiros div figure img{
+        width: 200px;
+        margin-bottom: 25px;
+    }
+    .biografia{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        justify-content: space-evenly;
+    }
+    .foto-contador figure img{
+        width: 270px;
+        height: 300px;
+    }
+    .texto-biografia{
+        height: 500px;
+        font-size: 16px;
+        text-align: left;
+    }
+    .secao-limita-largura{
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    footer{
+        height: 600px;
+    }
+    footer p{
+        display: none;
+    }
+    .abrir-cnpj{
+        width:400px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .abrir-cnpj div figure img{
+       display: none;
+    }   
+}
