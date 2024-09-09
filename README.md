@@ -1,0 +1,1 @@
+Esse projeto foi desenvolvido em HTML e CSS puro para um escritorio de contabilidade, site estático contento informações das atividades e serviços prestados pelo escritório, o site também conta com links para interação com as redes sociais do cliente.
